@@ -6,7 +6,7 @@ import FooterSection from "../components/home/FooterSection";
 import NavBar from "../components/home/NavBar";
 import AnimatedBackground from "../components/home/AnimatedBackground";
 import CustomCursor from "../components/home/CustomCursor";
-
+import '../../style.css';
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
 
