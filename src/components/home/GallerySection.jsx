@@ -1,4 +1,4 @@
-import useReveal from "@/useReveal";
+import useReveal from "./useReveal";
 
 const items = [
   { src: "/reparo.jpeg", title: "Reparo Hidráulico", desc: "Manutenção especializada diretamente no local do cliente.", tag: "Hidráulica" },
