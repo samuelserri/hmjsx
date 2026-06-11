@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
-import HeroSection from "@/components/home/HeroSection";
-import AboutSection from "@/components/home/AboutSection";
-import ServicesSection from "@/components/home/ServicesSection";
-import GallerySection from "@/components/home/GallerySection";
-import ContactSection from "@/components/home/ContactSection";
-import FooterSection from "@/components/home/FooterSection";
-import NavBar from "@/components/home/NavBar";
-import AnimatedBackground from "@/components/home/AnimatedBackground";
-import CustomCursor from "@/components/home/CustomCursor";
+import HeroSection from "../components/home/HeroSection";
+import GallerySection from "../components/home/GallerySection";
+import ContactSection from "../components/home/ContactSection";
+import FooterSection from "../components/home/FooterSection";
+import NavBar from "../components/home/NavBar";
+import AnimatedBackground from "../components/home/AnimatedBackground";
+import CustomCursor from "../components/home/CustomCursor";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -25,8 +23,7 @@ export default function Home() {
       <NavBar scrollY={scrollY} />
       <HeroSection />
       <main style={{ position: "relative", zIndex: 2 }}>
-        <AboutSection />
-        <ServicesSection />
+
         <GallerySection />
         <ContactSection />
       </main>
