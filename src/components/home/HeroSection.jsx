@@ -1,4 +1,4 @@
-import useReveal from "@/useReveal";
+import useReveal from ".useReveal";
 
 export default function HeroSection() {
   const [ref, visible] = useReveal();
