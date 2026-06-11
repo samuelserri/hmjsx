@@ -8,7 +8,12 @@ export default function useReveal(threshold = 0.15) {
     const el = ref.current;
     if (!el) return;
     const observer = new IntersectionObserver(
-      ([entry]) => { if (entry.isIntersecting) { setVisible(true); observer.disconnect(); } },
+      ([entry]) => { 
+        if (entry.isIntersecting) { 
+          setVisible(true); 
+          observer.disconnect(); 
+        } 
+      },
       { threshold }
     );
     observer.observe(el);

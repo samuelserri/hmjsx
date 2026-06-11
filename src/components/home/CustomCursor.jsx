@@ -31,8 +31,8 @@ export default function CustomCursor() {
 
   return (
     <>
-      <div ref__={dotRef} style={{ position: "fixed", top: 0, left: 0, width: 8, height: 8, background: "#ffd700", borderRadius: "50%", pointerEvents: "none", zIndex: 99999, willChange: "transform" }} />
-      <div ref__={ringRef} style={{ position: "fixed", top: 0, left: 0, width: 36, height: 36, border: "1.5px solid rgba(255,215,0,0.5)", borderRadius: "50%", pointerEvents: "none", zIndex: 99998, willChange: "transform" }} />
+      <div ref={dotRef} style={{ position: "fixed", top: 0, left: 0, width: 8, height: 8, background: "#ffd700", borderRadius: "50%", pointerEvents: "none", zIndex: 99999, willChange: "transform" }} />
+      <div ref={ringRef} style={{ position: "fixed", top: 0, left: 0, width: 36, height: 36, border: "1.5px solid rgba(255,215,0,0.5)", borderRadius: "50%", pointerEvents: "none", zIndex: 99998, willChange: "transform" }} />
     </>
   );
 }

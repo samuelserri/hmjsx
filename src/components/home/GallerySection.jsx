@@ -1,4 +1,3 @@
-// APAGUE a linha 1 atual e COLE esta no lugar:
 import useReveal from "@/useReveal";
 
 const items = [
@@ -12,7 +11,7 @@ const items = [
 function GalleryCard({ item, delay }) {
   const [ref, visible] = useReveal(0.1);
   return (
-    <article ref__={ref}
+    <article ref={ref}
       style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 20, overflow: "hidden", display: "flex", flexDirection: "column", opacity: visible ? 1 : 0, transform: visible ? "translateY(0)" : "translateY(50px)", transition: `all 0.8s cubic-bezier(0.16,1,0.3,1) ${delay}ms` }}
       onMouseEnter={e => { e.currentTarget.style.transform = "translateY(-8px)"; e.currentTarget.style.boxShadow = "0 25px 50px rgba(0,0,0,0.5)"; e.currentTarget.style.borderColor = "rgba(255,215,0,0.15)"; e.currentTarget.querySelector("img").style.transform = "scale(1.08)"; }}
       onMouseLeave={e => { e.currentTarget.style.transform = "translateY(0)"; e.currentTarget.style.boxShadow = "none"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.07)"; e.currentTarget.querySelector("img").style.transform = "scale(1)"; }}
@@ -33,7 +32,7 @@ export default function GallerySection() {
   const [titleRef, titleVisible] = useReveal();
   return (
     <section id="galeria" style={{ maxWidth: 1100, margin: "0 auto", padding: "80px 24px" }}>
-      <div ref__={titleRef} style={{ textAlign: "center", marginBottom: 60, opacity: titleVisible ? 1 : 0, transform: titleVisible ? "translateY(0)" : "translateY(30px)", transition: "all 0.8s cubic-bezier(0.16,1,0.3,1)" }}>
+      <div ref={titleRef} style={{ textAlign: "center", marginBottom: 60, opacity: titleVisible ? 1 : 0, transform: titleVisible ? "translateY(0)" : "translateY(30px)", transition: "all 0.8s cubic-bezier(0.16,1,0.3,1)" }}>
         <span style={{ fontSize: "0.75rem", color: "#ffd700", fontWeight: 700, letterSpacing: "3px", textTransform: "uppercase", display: "block", marginBottom: 12 }}>Portfólio</span>
         <h2 style={{ fontSize: "clamp(2rem, 4vw, 3rem)", fontWeight: 900, color: "#fff", letterSpacing: "-1px", marginBottom: 12 }}>Nosso Trabalho na <span style={{ color: "#ffd700" }}>Prática</span></h2>
         <p style={{ color: "rgba(255,255,255,0.4)", fontSize: "1rem", maxWidth: 500, margin: "0 auto" }}>Confira alguns de nossos atendimentos recentes e equipamentos disponíveis.</p>
