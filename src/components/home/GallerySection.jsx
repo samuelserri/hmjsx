@@ -1,4 +1,5 @@
-import useReveal from "./useReveal";
+// APAGUE a linha 1 atual e COLE esta no lugar:
+import useReveal from "@/useReveal";
 
 const items = [
   { src: "/reparo.jpeg", title: "Reparo Hidráulico", desc: "Manutenção especializada diretamente no local do cliente.", tag: "Hidráulica" },

@@ -1,4 +1,5 @@
-import useReveal from "./useReveal";
+// APAGUE a linha 1 atual e COLE esta no lugar:
+import useReveal from "@/useReveal";
 
 export default function ContactSection() {
   const [ref, visible] = useReveal();
